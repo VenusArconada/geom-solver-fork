@@ -28,7 +28,7 @@ computes the perimeter and area of that shape.
 		switch(ch){
 			case 1: //circleOption(); break;
 			case 2: //TriangleOption();break;
-			case 3: //polygonOption(ch); break;
+			case 3: squareOption(); break;
 			case 4: //rectangleOption(); break;
 			case 5: //polygonOption(ch); break;
 			default: System.out.println("Shape not found.\nExiting...");  break;
@@ -59,6 +59,21 @@ computes the perimeter and area of that shape.
 			default: System.out.println("Option not found. Exiting.."); break;
 		}
 	}//circleOption
+
+	public static void squareOption(){
+	
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Find the \n<1>Perimeter\n<2>Area");
+		int ch = sc.nextInt();
+		square sq = new square();
+		System.out.println("Enter your square's side length: ");
+		double length = sc.nextDouble();
+		switch(ch){
+			case 1: sq.solvePerimeter(length); break;
+			case 2: sq.solveArea(length); break;
+			default: System.out.println("Option not found. Exiting.."); break;
+		}
+	}//squareeOption
 	
 	
 	public static void polygonOption(int shape){
