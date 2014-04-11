@@ -1,6 +1,15 @@
 import java.util.*;
 
-public class GeomSolverV2{
+/* 
+
+TASK
+
+Make a shape class (Triangle, Rectangle, Circle, Square, NGon) that has two functions that
+computes the perimeter and area of that shape.
+
+ */
+ 
+ public class GeomSolverV2{
 
 	public static void main(String argsss[]){
 	
