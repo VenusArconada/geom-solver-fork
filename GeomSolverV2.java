@@ -26,7 +26,7 @@ computes the perimeter and area of that shape.
 		int ch = sc.nextInt();
 		
 		switch(ch){
-			case 1: //circleOption(); break;
+			case 1: circleOption(); break;
 			case 2: //TriangleOption();break;
 			case 3: //polygonOption(ch); break;
 			case 4: //rectangleOption(); break;
@@ -42,10 +42,10 @@ computes the perimeter and area of that shape.
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Find the \n<1>Circumference\n<2>Area");
 		int ch = sc.nextInt();
-	//	Circle c = new Circle();
+		Circle c = new Circle();
 		switch(ch){
-			case 1: //c.getCircumference(); break;
-			case 2: //c.getCircleArea(); break;
+			case 1: c.getCircumference(); break;
+			case 2: c.getCircleArea(); break;
 			default: System.out.println("Option not found. Exiting.."); break;
 		}
 	}//circleOption
