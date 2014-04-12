@@ -89,13 +89,13 @@ computes the perimeter and area of that shape.
 	}//polygonOption
 	
 	public static void rectangleOption(){
-	
+	    rectangle rec = new rectangle();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Find the \n<1>Area\n<2>Perimeter");
 		int ch = sc.nextInt();
 		switch(ch){
-			case 1: //getRectangleArea(); break;
-			case 2: //getRectanglePerimeter(); break;
+			case 1: rec.rectangleArea(); break;
+			case 2: rec.rectanglePerimeter(); break;
 			default: System.out.println("Option not found. Exiting.."); break;
 		}
 	}//rectangleOption
