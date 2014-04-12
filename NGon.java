@@ -4,10 +4,10 @@ import java.text.*;
 
 class NGon{
 
-	public static void main(String cha[]){
+	public static void main(String cha){
 		
 		Scanner sc = new Scanner(System.in);
-		String ch = cha[0];
+		String ch = cha;
 		System.out.println("N-Gon "+ch+" Calculator");
 		System.out.println("Enter # of sides:");
 		int n = sc.nextInt();
@@ -15,8 +15,8 @@ class NGon{
 		double m = sc. nextDouble();
 		
 		switch(ch){
-			case "Perimeter": getP(n,m);
-			case "Area": getA(n,m);
+			case "Perimeter": getP(n,m); break;
+			case "Area": getA(n,m); break;
 		
 		}
 	

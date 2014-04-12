@@ -80,9 +80,10 @@ computes the perimeter and area of that shape.
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Find the \n<1>Perimeter\n<2>Area");
 		int ch = sc.nextInt();
+		NGon ng = new NGon();
 		switch(ch){
-			case 1: //getPolygonPerimeter(shape); break;
-			case 2: //getPolygonArea(shape); break;
+			case 1: ng.main("Perimeter"); break;
+			case 2: ng.main("Area"); break;
 			default: System.out.println("Option not found. Exiting.."); break;
 		}		
 	
@@ -101,17 +102,9 @@ computes the perimeter and area of that shape.
 	}//rectangleOption
 	
 
-	public static void getPolygonPerimeter(int sh){
+
 	
-		switch(sh){
-			case 2: //getTrianglePerimeter(); break;
-			case 3: //getSquarePerimeter(); break; 
-			case 4: //getRectanglePerimeter(); break;
-			case 5: //getNGonPerimeter(); break;
-			default: System.out.println("Option not found. Exiting.."); break;
-		}
-	
-	}//getPolygonPerimeter
+
 	
 	
 

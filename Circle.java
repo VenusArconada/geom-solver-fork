@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Circle {
 	private static double cDiameter = 0;
 	private static double cPerimeter = 0;
@@ -12,7 +14,14 @@ public class Circle {
 		cDiameter = inp.nextDouble();
 		cPerimeter = cDiameter*2;
 		}
+
+	catch(Exception e){}
+	
+	System.out.println("Perimeter: "+cPerimeter);
+		
 	}
+
+	
 
 	public static void getCircleArea() {
 	Scanner inp = new Scanner(System.in);
