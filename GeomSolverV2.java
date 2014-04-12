@@ -28,7 +28,7 @@ computes the perimeter and area of that shape.
 		switch(ch){
 			case 1: circleOption(); break;
 			case 2: TriangleOption();break;
-			case 3: polygonOption(ch); break;
+			case 3: squareOption(); break;
 			case 4: rectangleOption(); break;
 			case 5: polygonOption(ch); break;
 			default: System.out.println("Shape not found.\nExiting...");  break;
