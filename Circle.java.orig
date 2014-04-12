@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import java.util.InputMismatchException;
 import java.util.Scanner;
+=======
+import java.util.*;
+>>>>>>> 5c9b980c447c98d6da5fb1e37b4f8b4d1a3c0ece
 
 public class Circle {
 	private static double cDiameter = 0;
@@ -18,15 +22,29 @@ public class Circle {
 	System.out.println("\nComputing for Circle's Circumference\n");
 	System.out.print("Enter circle's diameter: ");
 	
+<<<<<<< HEAD
 		if (isInputMatched(inp)) {
 			cCircumf = cDiameter*pi;
 			System.out.println("\nThe circle's circumference is =" + cCircumf);}
 		else
 			System.out.println("Invalid input. Exiting...");
-}
+	}
+	
+=======
+	try {
+		cDiameter = inp.nextDouble();
+		cPerimeter = cDiameter*2;
+		}
+
+	catch(Exception e){}
+	
+	System.out.println("Perimeter: "+cPerimeter);
+		
+	}
 
 	
-	
+
+>>>>>>> 5c9b980c447c98d6da5fb1e37b4f8b4d1a3c0ece
 	public static void getCircleArea() {
 		System.out.println("\nComputing for Circle's Area\n");
 		System.out.print("Enter circle's diameter: ");
